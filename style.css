@@ -6,7 +6,7 @@
 
 body {
   line-height: 1.5;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 img,
@@ -50,10 +50,10 @@ body {
 main {
   background-color: var(--White);
   border-radius: 1rem;
-  max-width: 352px;
-  padding: 1.2rem;
+  max-width: 22rem;
+  padding: 1rem;
   border: 0.12rem solid var(--Black);
-  box-shadow: 12px 10px 0px rgb(0, 0, 0);
+  box-shadow: 8px 8px 0px rgb(0, 0, 0);
 }
 
 #main-img {
@@ -61,18 +61,17 @@ main {
   margin-bottom: 1rem;
 }
 
-#main-info > button {
+a {
   background-color: var(--Yellow);
-  border: none;
-  color: var(--Black);
-  font-weight: 600;
   padding: 0.5rem;
   border-radius: 0.3rem;
-  margin-bottom: 0.7rem;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 #main-info > p:nth-of-type(1) {
   color: var(--Black);
+  margin-top: 0.7rem;
   margin-bottom: 0.7rem;
 }
 
@@ -81,14 +80,15 @@ main {
   margin-bottom: 1.2rem;
 }
 
-#main-info > h3 {
+#main-info > h1 {
+  font-size: 1.2rem;
   font-weight: 800;
   margin-bottom: 0.7rem;
   cursor: pointer;
   transition: 0.5s ease;
 }
 
-#main-info > h3:hover {
+#main-info > h1:hover {
   color: var(--Yellow);
   transition: 0.5s ease;
 }
@@ -109,18 +109,18 @@ main {
 
 @media (max-width: 767px) {
   main {
-    max-width: 336px;
+    max-width: 21rem;
   }
 }
 
 @media (max-width: 370px) {
   main {
-    max-width: 320px;
+    max-width: 20rem;
   }
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
